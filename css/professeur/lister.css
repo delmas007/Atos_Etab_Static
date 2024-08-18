@@ -44,11 +44,7 @@ body {
     cursor: pointer;
 }
 
-.menu li.active,
-.menu li:hover {
-    color: #000;
-    font-weight: bold;
-}
+
 
 .icon {
     margin-right: 10px;
@@ -208,6 +204,10 @@ td {
     background-color: #E0E0E0;
     color: black;
 }
+.menu a{
+    text-decoration: none;
+    color: #333;
+}
 
 .close {
     color: #aaa;
@@ -222,4 +222,18 @@ td {
     text-decoration: none;
     cursor: pointer;
 }
+
+.menu li.active,
+.menu li:hover,
+.menu li.active a,
+.menu li:hover a {
+    color: #000;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
 

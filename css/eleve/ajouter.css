@@ -45,11 +45,7 @@ body {
     cursor: pointer;
 }
 
-.menu li.active,
-.menu li:hover {
-    color: #000;
-    font-weight: bold;
-}
+
 
 .icon {
     margin-right: 10px;
@@ -166,4 +162,16 @@ form {
 .btn-save {
     background-color: #44cc44;
     color: white;
+}
+.menu li.active,
+.menu li:hover,
+.menu li.active a,
+.menu li:hover a {
+    color: #000;
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #555555;
 }
