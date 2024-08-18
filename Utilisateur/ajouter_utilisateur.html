@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier-professeur</title>
+    <title>Ajouter-Utilisateur</title>
     <link rel="stylesheet" href="../css/professeur/ajouter.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,12 @@
         <h2>Mon Etab</h2>
     </div>
     <ul class="menu">
-        <li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
+        <li ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
             <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
         </svg> Tableau de bord</li>
-        <li ><img src="../icon/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</li>
-        <li class="active"><img src="../icon/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</li>
-        <li><img src="../icon/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</li>
+        <li><img src="../icon/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</li>
+        <li ><img src="../icon/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</li>
+        <li class="active"><img src="../icon/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</li>
         <li><img src="../icon/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</li>
     </ul>
     <div class="logout">
@@ -36,37 +36,16 @@
         <div class="retour-container">
             <a href="#" class="retour">← Retour</a>
         </div>
-        <h2>Modifier le professeur - 245</h2>
+        <h2>Ajouter un utilisateur</h2>
         <form id="addStudentForm">
             <div class="form-row">
-                <input type="text" id="nom" placeholder="" value="Kouakou" required>
-                <input type="text" id="prenom" placeholder="Prénom" value="George" required>
+                <input type="text" id="pseudo" placeholder="Pseudo" required>
             </div>
             <div class="form-row">
-                <div>
-                    <label >Vacant :</label>
-                </div>
-                <div class="radio-group">
-                    <label><input type="radio" name="vacant" value="oui"  required> oui</label>
-                    <label><input type="radio" name="vacant" value="non" required> non</label>
-                </div>
+                <input type="password" id="mot de passe" placeholder="Mot de passe" required>
             </div>
             <div class="form-row">
-                    <select id="classe" required>
-                        <option value="">Sélectionner une matiere</option>
-                        <option value="Math">Math</option>
-                        <option value="Physique">Physique</option>
-                        <option value="EPS">EPS</option>
-                        <option value="Anglais" selected>Anglais</option>
-                        <option value="SVT">SVT</option>
-                        <option value="Philosophie">Philosophie</option>
-                        <option value="Français">Français</option>
-                    </select>
-                <input type="date" id="dateNaissance" value="2005-03-13" required>
-            </div>
-            <div class="form-row">
-                <input type="tel" id="telephone" value="07784562511" placeholder="Téléphone">
-                <input type="text" id="ville" value="Bingerville" placeholder="Ville">
+                <input type="password" id="confirmer mot de passe" placeholder="Confirmer mot de passe" required>
             </div>
             <div class="form-row buttons">
                 <button type="button" class="btn-cancel">Annuler</button>
