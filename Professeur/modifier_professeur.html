@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier-eleve</title>
-    <link rel="stylesheet" href="../css/eleve/ajouter.css">
+    <title>Modifier-professeur</title>
+    <link rel="stylesheet" href="../css/professeur/ajouter.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
         <li class="active"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-grid-3x2-gap-fill" viewBox="0 0 16 16">
             <path d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1z"/>
         </svg> Tableau de bord</li>
-        <li class="active"><img src="../icon/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</li>
-        <li><img src="../icon/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</li>
+        <li ><img src="../icon/eleve.png" style="width: 30px;height: 30px" alt=""> Élèves</li>
+        <li class="active"><img src="../icon/professeur.png" style="width: 30px;height: 30px" alt=""> Professeurs</li>
         <li><img src="../icon/user.png" style="width: 30px;height: 30px" alt=""> Utilisateurs</li>
         <li><img src="../icon/rapport.png" style="width: 30px;height: 30px" alt=""> Rapport</li>
     </ul>
@@ -33,35 +33,36 @@
 
 <div class="main-content">
     <main>
-        <a href="#" class="retour">← Retour</a>
-        <h2>Modifier l'eleve - 245</h2>
+        <div class="retour-container">
+            <a href="#" class="retour">← Retour</a>
+        </div>
+        <h2>Modifier le professeur - 245</h2>
         <form id="addStudentForm">
             <div class="form-row">
                 <input type="text" id="nom" placeholder="" value="Kouakou" required>
                 <input type="text" id="prenom" placeholder="Prénom" value="George" required>
             </div>
             <div class="form-row">
+                <div>
+                    <label >Vacant :</label>
+                </div>
                 <div class="radio-group">
-                    <label><input type="radio" name="genre" value="homme"  required> Homme</label>
-                    <label><input type="radio" name="genre" value="femme" required> Femme</label>
+                    <label><input type="radio" name="vacant" value="oui"  required> oui</label>
+                    <label><input type="radio" name="vacant" value="non" required> non</label>
                 </div>
             </div>
             <div class="form-row">
-                <input type="text" id="matricule" value="MAKDV255655" placeholder="Matricule" required>
+                    <select id="classe" required>
+                        <option value="">Sélectionner une matiere</option>
+                        <option value="Math">Math</option>
+                        <option value="Physique">Physique</option>
+                        <option value="EPS">EPS</option>
+                        <option value="Anglais" selected>Anglais</option>
+                        <option value="SVT">SVT</option>
+                        <option value="Philosophie">Philosophie</option>
+                        <option value="Français">Français</option>
+                    </select>
                 <input type="date" id="dateNaissance" value="2005-03-13" required>
-            </div>
-            <div class="form-row">
-                <select id="classe" required>
-                    <option value="">Sélectionner une classe</option>
-                    <option value="Tle">Tle</option>
-                    <option value="1ere">1ère</option>
-                    <option value="2nd" selected>2nd</option>
-                    <option value="3eme">3ème</option>
-                    <option value="4eme">4ème</option>
-                    <option value="5eme">5ème</option>
-                    <option value="6eme">6ème</option>
-                </select>
-
             </div>
             <div class="form-row">
                 <input type="tel" id="telephone" value="07784562511" placeholder="Téléphone">
